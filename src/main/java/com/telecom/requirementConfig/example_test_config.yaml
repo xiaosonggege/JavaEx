@@ -1,0 +1,36 @@
+#yaml写法示例
+appname: "JavaSparkDemo"
+master_set: "local[*]"
+loglevel: "Warn"
+data_export_path: "/Users/songyunlong/Desktop/company/数据治理/数据质量管理/数据/附件10. 字段长度错误.xlsx"
+data_save_path: "/Users/songyunlong/Desktop/spark_java/check_length"
+data_save_style: "csv"
+len: 5
+len1: 5.1
+len2: true
+need_structType: true
+col_name:
+  - "id"
+  - "code"
+  - "name"
+  - "region_id"
+  - "coordinate_x"
+  - "coordinate_y"
+  - "property_type_id"
+  - "area_type_id"
+  - "address_id"
+  - "address_name"
+  - "parent_id"
+  - "spec_id"
+  - "is_valid"
+need_check_col_name: "property_type_id"
+need_check_col:
+  -
+    - "id"
+    - "id"
+  -
+    - "code"
+    - "code"
+  -
+    - "name"
+    - "name"

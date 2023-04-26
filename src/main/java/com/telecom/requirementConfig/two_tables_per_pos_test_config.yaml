@@ -1,0 +1,55 @@
+appname: "JavaSparkDemo"
+master_set: "local[*]"
+loglevel: "Warn"
+data_export_path: "/Users/songyunlong/Desktop/company/数据治理/数据质量管理/数据/电信管理域主数据_temp2.xlsx"
+data_export_path2: "/Users/songyunlong/Desktop/company/数据治理/数据质量管理/数据/电信管理域主数据_temp22.xlsx"
+data_save_path: "/Users/songyunlong/Desktop/spark_java/check_two_table_per_pos"
+data_save_style: "csv"
+join_col_name1: "id"
+join_col_name2: "id"
+join_mode: "left"
+need_structType: true
+data_source: "excel"
+col_name1:
+  - "id"
+  - "code"
+  - "name"
+  - "parent_id"
+  - "area_level_id"
+  - "ppm_code"
+  - "spec_id"
+  - "is_valid"
+col_name2:
+  - "id"
+  - "code"
+  - "name"
+  - "parent_id"
+  - "area_level_id"
+  - "ppm_code"
+  - "spec_id"
+  - "is_valid"
+need_check_col:
+  -
+    - "id"
+    - "id"
+  -
+    - "code"
+    - "code"
+  -
+    - "name"
+    - "name"
+  -
+    - "parent_id"
+    - "parent_id"
+  -
+    - "area_level_id"
+    - "area_level_id"
+  -
+    - "ppm_code"
+    - "ppm_code"
+  -
+    - "spec_id"
+    - "spec_id"
+  -
+    - "is_valid"
+    - "is_valid"
